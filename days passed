@@ -1,0 +1,8 @@
+const CalcDay = function (date1, date2) {
+  const result = Math.round(
+    Math.abs(new Date(date2) - new Date(date1) / (1000 * 60 * 60 * 24))
+  );
+  console.log(result);
+};
+
+CalcDay(transactionDates[0], transactionDates[1]);
